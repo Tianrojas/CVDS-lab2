@@ -37,7 +37,7 @@ El siguiente diagrama muestra los componentes y la relación de otros repositori
 ### CREAR UN PROYECTO CON MAVEN
 
 Se crea un proyecto maven con ayuda de los arquetipos (archetypes) con el siguiente comando
-`mvn archetype:generate -Dfilter=maven-archetype-quickstart`
+`mvn archetype:generate -Dfilter=maven-archetype-quickstart`.
 En donde tendremos que especificar las caracteristicas provistas por el documento
 * Grupo: edu.eci.cvds
 * Id del Artefacto: Patterns
@@ -50,7 +50,31 @@ Luego nos dirigimos a la carpeta Patterns y escribimos el comando `tree` para vi
 
 ![2](https://github.com/Tianrojas/LABORATORIO-2/blob/main/resourse/2.png)
 
+Para compilar ejecute el comando:
+```
+$ mvn package
+```
+Si maven no actualiza las dependencias utilice la opción -U asi:
+```
+$ mvn -U package
+```
+* Busque cuál es el objetivo del parámetro "package" y qué otros parámetros se podrían enviar al comando mvn.
+   * El objetivo de package es ***"empaquetar el proyecto"*** por defecto crea un ejecutable ***.jar***
 
+
+* Busque cómo ejecutar desde línea de comandos, un proyecto maven y verifique la salida cuando se ejecuta con la clase App.java como parámetro en "mainClass"
+   * Para ejecutar el proyecto debe ejecutar el siguiente comando:
+      ```
+      mvn exec:java -Dexec.mainClass="edu.eci.cvds.patterns.App"
+      ```
+
+* Buscar cómo enviar parámetros al plugin "exec".
+   * Para enviar parametro ingresesar el siguiente comando 
+      ```
+      mvn exec: exec -Dexec.executable = "maven" [-Dexec.workingdir = "/ tmp"] -Dexec.args = "- X myproject: dist"
+      ```
+
+* Ejecutar nuevamente la clase desde línea de comandos y verificar la salida: ```Hello World!``` \
 
 
 
