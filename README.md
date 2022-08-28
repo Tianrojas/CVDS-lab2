@@ -34,6 +34,21 @@ El repositorio central de maven contiene toda la colección de archivos jar, com
 Muchas veces, es posible que en las organizaciones no proporcionen acceso a Internet por razones de seguridad y ancho de banda. En estos casos, podemos descargar una copia de los recursos del repositorio central de Maven en el repositorio remoto para uso sin conexión. Esto debe mencionarse en su archivo settings.xml para las rutas del repositorio remoto. Incluso es posible que necesite otros repositorios centrales oficiales distribuidos a través de geografías para buscar y obtener dependencias, esto se denomina espejos en maven y se puede usar haciendo ciertos cambios en el archivo settings.xml.
 El siguiente diagrama muestra los componentes y la relación de otros repositorios y el usuario con el repositorio central de maven. La red de entrega de contenido (CDN) del repositorio central se puede ver conectada al usuario experto a través del archivo settings.xml.
 
+### CREAR UN PROYECTO CON MAVEN
+
+Se crea un proyecto maven con ayuda de los arquetipos (archetypes) con el siguiente comando
+`mvn archetype:generate -Dfilter=maven-archetype-quickstart`
+En donde tendremos que especificar las caracteristicas provistas por el documento
+* Grupo: edu.eci.cvds
+* Id del Artefacto: Patterns
+* Paquete: edu.eci.cvds.patterns
+* archetypeArtifactId: maven-archetype-quickstart
+
+//Img1
+
+Luego nos dirigimos a la carpeta Patterns y escribimos el comando `tree` para visualizar el listado de las rutas de carpetas
+
+//Img2
 
 
 
@@ -41,7 +56,8 @@ El siguiente diagrama muestra los componentes y la relación de otros repositori
 
 
 
-## Fuentes
+
+Fuentes
 ===
 [Utilidad de maven](https://tjmbb.org/es/learntek-espa%C3%B1ol/)
 [Fases de maven](https://ruben.civeira.net/2020/09/las-fases-del-ciclo-de-vida-de-maven.html)
