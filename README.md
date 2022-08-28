@@ -76,13 +76,16 @@ $ mvn -U package
       ```
 
 * Ejecutar nuevamente la clase desde línea de comandos y verificar la salida: ```Hello World!``` 
-   * ![3](https://github.com/Tianrojas/LABORATORIO-2/blob/main/resourse/3.png)
+   * 
+   ![3](https://github.com/Tianrojas/LABORATORIO-2/blob/main/resourse/3.png)
 
 * Ejecutar la clase desde línea de comandos enviando su nombre como parámetro y verificar la salida. Ej: Hello Pepito!
-   * Cuando ejecuté el comando con argumentos nada ocurrió, seguía apareciendo "Hello world" así que vi el código de App.java y me dí cuenta que aunque recibía el parametro `args` no realizaba ningúna acción con este, por lo que cambíe el codigo a uno que sí tratará el argumento como se deseaba, volví a compilarlo con `mvn pattern` y lo corrí nuevamente con el argumento "Sebastian" ![4](https://github.com/Tianrojas/LABORATORIO-2/blob/main/resourse/4.png)
+   * Cuando ejecuté el comando con argumentos nada ocurrió, seguía apareciendo "Hello world" así que vi el código de App.java y me dí cuenta que aunque recibía el parametro `args` no realizaba ningúna acción con este, por lo que cambíe el codigo a uno que sí tratará el argumento como se deseaba, volví a compilarlo con `mvn pattern` y lo corrí nuevamente con el argumento "Sebastian" 
+   ![4](https://github.com/Tianrojas/LABORATORIO-2/blob/main/resourse/4.png)
 
 * Verifique cómo enviar los parámetros de forma "compuesta" para que el saludo se realice con nombre y apellido. Ejecutar nuevamente y verifi car la salida en consola. Ej: Hello Pepito Perez!
-   * Sintax: `mvn exec:java -Dexec.mainClass=test.Main -Dexec.args="'argument separated with space' 'another one'"` ![5](https://github.com/Tianrojas/LABORATORIO-2/blob/main/resourse/5.png)
+   * Sintax: `mvn exec:java -Dexec.mainClass=test.Main -Dexec.args="'argument separated with space' 'another one'"` 
+   ![5](https://github.com/Tianrojas/LABORATORIO-2/blob/main/resourse/5.png)
 
 
 
