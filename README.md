@@ -59,7 +59,8 @@ Si maven no actualiza las dependencias utilice la opción -U asi:
 $ mvn -U package
 ```
 * Busque cuál es el objetivo del parámetro "package" y qué otros parámetros se podrían enviar al comando mvn.
-   * El objetivo de package es ***"empaquetar el proyecto"*** por defecto crea un ejecutable ***.jar***
+   * Su función es tomar el código compilado y empaquetarlo en su formato distribuible, como un JAR. Este comando construye el proyecto maven y lo empaqueta en un JAR, WAR, etc.
+   * Podemos encontrar una multitud de parametros tales como: `clean`,`compiler:compile`,`compiler:testCompile`,`install`,`deploy`,`validate`,`dependency:tree`,`dependency:analyze`,`archetype:generate`,`test`, `compile`, `verify`, entre otros...
 
 
 * Busque cómo ejecutar desde línea de comandos, un proyecto maven y verifique la salida cuando se ejecuta con la clase App.java como parámetro en "mainClass"
@@ -74,7 +75,14 @@ $ mvn -U package
       mvn exec: exec -Dexec.executable = "maven" [-Dexec.workingdir = "/ tmp"] -Dexec.args = "- X myproject: dist"
       ```
 
-* Ejecutar nuevamente la clase desde línea de comandos y verificar la salida: ```Hello World!``` \
+* Ejecutar nuevamente la clase desde línea de comandos y verificar la salida: ```Hello World!``` 
+   * ![3](https://github.com/Tianrojas/LABORATORIO-2/blob/main/resourse/3.png)
+
+* Ejecutar la clase desde línea de comandos enviando su nombre como parámetro y verificar la salida. Ej: Hello Pepito!
+   * Cuando ejecuté el comando con argumentos nada ocurrió, seguía apareciendo "Hello world" así que vi el código de App.java y me dí cuenta que aunque recibía el parametro `args` no realizaba ningúna acción con este, por lo que cambíe el codigo a uno que sí tratará el argumento como se deseaba, volví a compilarlo con `mvn pattern` y lo corrí nuevamente con el argumento "Sebastian" ![4](https://github.com/Tianrojas/LABORATORIO-2/blob/main/resourse/4.png)
+
+* Verifique cómo enviar los parámetros de forma "compuesta" para que el saludo se realice con nombre y apellido. Ejecutar nuevamente y verifi car la salida en consola. Ej: Hello Pepito Perez!
+   * Sintax: `mvn exec:java -Dexec.mainClass=test.Main -Dexec.args="'argument separated with space' 'another one'"` ![5](https://github.com/Tianrojas/LABORATORIO-2/blob/main/resourse/5.png)
 
 
 
@@ -87,3 +95,4 @@ Fuentes
 * [Fases de maven](https://ruben.civeira.net/2020/09/las-fases-del-ciclo-de-vida-de-maven.html)
 * [Diferencia entre ciclo de vida y fases](https://blog.planview.com/project-phase-life-cycle/)
 * [Plugings](https://neoattack.com/neowiki/plugin/)
+* [Comandos de Mvn](https://www.digitalocean.com/community/tutorials/maven-commands-options-cheat-sheet)
