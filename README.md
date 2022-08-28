@@ -44,11 +44,11 @@ En donde tendremos que especificar las caracteristicas provistas por el document
 * Paquete: edu.eci.cvds.patterns
 * archetypeArtifactId: maven-archetype-quickstart
 
-//Img1
+![1](https://github.com/Tianrojas/LABORATORIO-2/blob/main/resourse/1.png)
 
 Luego nos dirigimos a la carpeta Patterns y escribimos el comando `tree` para visualizar el listado de las rutas de carpetas
 
-//Img2
+![2](https://github.com/Tianrojas/LABORATORIO-2/blob/main/resourse/2.png)
 
 
 
@@ -59,7 +59,7 @@ Luego nos dirigimos a la carpeta Patterns y escribimos el comando `tree` para vi
 
 Fuentes
 ===
-[Utilidad de maven](https://tjmbb.org/es/learntek-espa%C3%B1ol/)
-[Fases de maven](https://ruben.civeira.net/2020/09/las-fases-del-ciclo-de-vida-de-maven.html)
-[Diferencia entre ciclo de vida y fases](https://blog.planview.com/project-phase-life-cycle/)
-[Plugings](https://neoattack.com/neowiki/plugin/)
+* [Utilidad de maven](https://tjmbb.org/es/learntek-espa%C3%B1ol/)
+* [Fases de maven](https://ruben.civeira.net/2020/09/las-fases-del-ciclo-de-vida-de-maven.html)
+* [Diferencia entre ciclo de vida y fases](https://blog.planview.com/project-phase-life-cycle/)
+* [Plugings](https://neoattack.com/neowiki/plugin/)
