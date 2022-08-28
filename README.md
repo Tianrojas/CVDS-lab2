@@ -23,10 +23,10 @@ Entre sus mayores ventajas podemos encontrar:
 * **deploy:** copia el paquete en el repositorio remoto.
 
 3. Ciclo de vida de la construcción:
-Un ciclo de vida de construcción es una secuencia de fases bien definida, que define el orden en el que se ejecutarán los objetivos. Aquí la fase representa una etapa del ciclo de vida. Como ejemplo, un típicoMaven Build Lifecycle consta que consta de la secuencia de sus fases.
+>>Un ciclo de vida de construcción es una secuencia de fases bien definida, que define el orden en el que se ejecutarán los objetivos. Aquí la fase representa una etapa del ciclo de vida. Como ejemplo, un típicoMaven Build Lifecycle consta que consta de la secuencia de sus fases.
 
 4. Para qué sirven los plugins?
-Un Plugin es un fragmento o componente de código hecho para ampliar las funciones de un programa o de una herramienta.
+>>Un Plugin es un fragmento o componente de código hecho para ampliar las funciones de un programa o de una herramienta.
 
 5. Qué es y para qué sirve el repositorio central de maven?
 
