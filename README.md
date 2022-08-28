@@ -1,9 +1,8 @@
-# Laboratorio 2
+Laboratorio 2
 ===
 **Nombre:** Sebastian Rojas
 
 ### La herramienta maven
-===
 
 1. Cuál es su mayor utilidad?
 Entre sus mayores ventajas podemos encontrar:
