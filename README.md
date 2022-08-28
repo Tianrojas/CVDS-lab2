@@ -143,3 +143,4 @@ Fuentes
 * [Diferencia entre ciclo de vida y fases](https://blog.planview.com/project-phase-life-cycle/)
 * [Plugings](https://neoattack.com/neowiki/plugin/)
 * [Comandos de Mvn](https://www.digitalocean.com/community/tutorials/maven-commands-options-cheat-sheet)
+* [gitignore](https://www.atlassian.com/es/git/tutorials/saving-changes/gitignore)
